@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ6FHZHSNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZ6FHZHSNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Lorenzo Bernini</title>
+</head>
+<body>
+
+  <div class="main-container" id="main-container">
+
+    <div class="pallino" id="pallino"></div>
+
+    <div class="side-sx">
+      <div class="about">
+        <div class="navbar" id="navbar-1">
+          <p id="home">ABOUT</p>
+          <p id="home-mobile">ABOUT</p>
+          <p id="works-mobile">WORKS</p>
+        </div>
+        <div class="item" id="mie-info">
+          <p>
+            Hi, I’m Lorenzo Bernini (not <a href="https://en.wikipedia.org/wiki/Gian_Lorenzo_Bernini" target="_blank">this one</a>,
+            but <a href="images/hello there.jpg" target="_blank">this one</a>), a Communication Design student at Politecnico di Milano. <br>
+            I’m interested in everything that allows me to tell a story using images and over the years I have cultivated this passion through various means,
+            such as filmmaking, graphic design, 2D and 3D animation.
+          </p>
+          <br>
+          <a href="mailto:lorenzobernini98@gmail.com">lorenzobernini98@gmail.com</a><br><br>
+          <a href="https://vimeo.com/user51217371" target="_blank">Vimeo</a> |
+          <a href="https://www.youtube.com/channel/UCj8__Y50PBWkZn5CNWtgeqQ?view_as=subscriber" target="_blank">YouTube</a> |
+          <a href="https://www.behance.net/lorenzobernini" target="_blank">Behance</a><br><br>
+
+          <p class="footer">
+            © <script>document.write(new Date().getFullYear())</script>
+          </p>
+        </div>
+      </div>
+      <div class="works" id="gruppo-works">
+        <div class="navbar" id="navbar-2">
+          <p id="lavori">WORKS</p>
+        </div>
+        <div id="gruppo-filtri">
+          <button class="btn active" id="primo-btn" onclick="filterSelection('all')">All</button>
+          <button class="btn" onclick="filterSelection('3d')">3D</button>
+          <button class="btn" onclick="filterSelection('filmmaking')">Filmmaking</button>
+          <button class="btn" onclick="filterSelection('motion')">Motion</button>
+          <button class="btn" onclick="filterSelection('editorial')">Editorial</button>
+          <button class="btn" id="ultimo-btn" onclick="filterSelection('branding')">Branding</button>
+        </div>
+        <div class="gruppo-pulsanti" id="gruppo-pulsanti">
+          <button class="filterDiv" id="back">&#x2190;</button>
+          <button class="filterDiv 3d filmmaking" id="soli">Soli</button>
+          <button class="filterDiv 3d filmmaking" id="luci">Luci</button>
+          <button class="filterDiv editorial" id="becher">La dignità delle piramidi</button>
+          <button class="filterDiv filmmaking branding" id="schade">Schadenfreudemetertest</button>
+          <button class="filterDiv branding editorial" id="villa">Villa Necchi Campiglio</button>
+          <button class="filterDiv motion" id="once">Once Upon a Time in the Web</button>
+          <button class="filterDiv filmmaking branding" id="airbnb">Airbnb Voice</button>
+          <button class="filterDiv filmmaking" id="inner">Inner Beauty</button>
+          <button class="filterDiv editorial motion" id="paul">Paul Rand</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-dx" id="scrollami">
+      <div id="inizio">
+        <video autoplay muted loop id="VideoHome"><source src="images/video-home-sub.mp4" type="video/mp4"></video>
+      </div>
+      <div class="content-dx" id="soli-content">
+          <div class="header-dx">
+            <div class="dettagli">
+              <p>3D Short Film</p>
+            </div>
+            <div class="dettagli" id="cliente">
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="dettagli" id="speciale">
+              <p>2020</p>
+            </div>
+          </div>
+          <p class="descrizione">
+            <i>Soli</i> is a 17 minutes short film that tells the story of some people who have lost the habit of communicating and staying together, developed during the
+            2020 Italy's spring lockdown.
+            Made in 3D with Blender, I was responsable for every step of the creative process, from pre-production (screenwriting, storyboarding, concept art), to
+            production (modeling, shading, retopology, animation, directing, lighting) and post-production (editing, sound, color correction).<br>
+            A detailed report of the work is available on the <a href="https://soli-film.github.io/" target="_blank">project website</a>.
+            <br>
+            <br>
+            Collaborators:<br>
+            Gianluca Locatelli, Filippo Testa.<br>
+            <br>
+          </p>
+          <div class="vimeo" style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/486161333?title=0&byline=0&portrait=0" style="position:absolute;top:-10%;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+          <!-- <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://www.youtube.com/embed/BIEIJevVgVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe>
+          </div> -->
+        </div>
+      <div class="content-dx" id="luci-content">
+        <div class="header-dx">
+          <div class="dettagli">
+            <p>2D/3D Short Film</p>
+          </div>
+          <div class="dettagli" id="cliente">
+            <p>Politecnico di Milano</p>
+          </div>
+          <div class="dettagli" id="speciale">
+            <p>2020</p>
+          </div>
+        </div>
+        <p class="descrizione">
+          During the course of a five days workshop, we were asked to realize a short video targeted towards young teenagers.
+          We came up with an animated short that aims to raise awareness on mental health, through a visual metaphor. <br>
+          After coming up with the concept and drawing the storyboard, I realized the environment and the lighting for the forest in 3D with Blender.
+          The 2D animated fireflies and the 3D background come together thanks to the lighting, driven by the 2D characters, but rendered in the 3D environment.
+          <br>
+          <br>
+          Collaborators:<br>
+          Alessia Arosio, Emanuele Coppo, Gianluca Locatelli, Enrico Monasteri, Filippo Testa.<br>
+          <br>
+        </p>
+        <div class="vimeo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/465280539?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <br>
+      </div>
+      <div class="content-dx" id="becher-content">
+          <div class="header-dx">
+            <div class="dettagli">
+              <p>Booklet</p>
+            </div>
+            <div class="dettagli" id="cliente">
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="dettagli" id="speciale">
+              <p>2020</p>
+            </div>
+          </div>
+          <p class="descrizione">
+            <i>La dignità delle piramidi</i> (The dignity of pyramids) is a short booklet that collects some reflections on the work of Bernd
+            and Hilla Becher, two of the most influential photographer of the 20th century. In the second part of the book the photographs
+            are organized into categories of buildings (typologies), following the duo’s distinctive archival structure.
+            <br>
+            <br>
+            <br>
+          </p>
+          <img src="images/becher/1.1.jpg">
+          <img src="images/becher/2.jpg">
+          <img src="images/becher/3.jpg">
+          <img src="images/becher/4.jpg">
+          <img src="images/becher/5.jpg">
+          <img src="images/becher/6.jpg">
+          <img src="images/becher/7.jpg">
+          <img src="images/becher/8.jpg">
+          <img src="images/becher/9.jpg">
+          <img src="images/becher/10.jpg">
+          <img src="images/becher/11.jpg">
+          <img src="images/becher/12.jpg">
+          <img src="images/becher/13.jpg">
+          <img src="images/becher/14.jpg">
+          <img src="images/becher/15.jpg">
+      </div>
+      <div class="content-dx" id="schade-content">
+          <div class="header-dx">
+            <div class="dettagli">
+              <p>Installation</p>
+            </div>
+            <div class="dettagli" id="cliente">
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="dettagli" id="speciale">
+              <p>2019</p>
+            </div>
+          </div>
+          <p class="descrizione">
+            <i>Schandefreudemetertest</i> is an interactive experience that takes place thanks to a machine, consisting of six screens, an eye-tracker and a printer.
+            The experience resembles a scientific test, whose purpose is to make people think about human morbidity and especially about the concept of schadenfreude (the pleasure driven by others’
+            misfortunes), in its multiple emotional and social implications. The volunteer rests his chin on a special support and watches a series of videos
+            on the screens, one of which concerns the death of one or more people. If the attention lingers long enough on the violent video, another
+            screen will start broadcasting death videos and so on. The eye-tracker records the subject's attention shifts and returns a printed report, where a
+            graph and other data, illustrate the result of the test. <br> To learn more, visit the project website <a href = "http://geistlab.de/ "target ="_blank ">geistlab.de</a>,
+            or the Instagram page <a href="https://www.instagram.com/geist.lab/" target="_blank">@geist.lab</a>.<br>
+            The project was featured as a case study on <a href="https://speculativeedu.eu/case-study-communicative-machines-speculating-on-death/" target="_blank">speculativeedu.eu</a>,
+            an international platform collecting advances in Speculative Design research and applications.
+            <br>
+            <br>
+            Collaborators:<br>
+            Alessia Arosio, Emanuele Coppo, Enrico Monasteri, Filippo Testa.<br>
+            <br>
+          </p>
+          <div class="vimeo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/436112687?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <br>
+          <img src="images/schadenfreude/low-res/tutto2.jpg">
+          <img src="images/schadenfreude/low-res/macchina1.jpg">
+          <img src="images/schadenfreude/low-res/pgt.jpg">
+          <img src="images/schadenfreude/low-res/telecomando.jpg">
+          <img src="images/schadenfreude/low-res/poggiatesta_wide_zoom.jpg">
+          <img src="images/schadenfreude/low-res/faccia.jpg">
+          <img src="images/schadenfreude/low-res/libro.jpg">
+          <img src="images/schadenfreude/low-res/bracc.jpg">
+          <img src="images/schadenfreude/report.jpg">
+      </div>
+      <div class="content-dx" id="villa-content">
+          <div class="header-dx">
+            <div class="dettagli">
+              <p>Brand Identity</p>
+            </div>
+            <div class="dettagli" id="cliente">
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="dettagli" id="speciale">
+              <p>2019</p>
+            </div>
+          </div>
+          <p class="descrizione">
+            We were asked to develop a new visual identity for Villa Necchi Campiglio, a 1930s modern villa-museum in the heart of Milan. Everything started with the
+            trademark, inspired by the strong and geometric shapes of the architecture, designed by Piero Portaluppi. Then we evolved the original idea into a series
+            of artifacts (stationery, merchandise, wayfinding, website) to generate a complete system.<br>
+            As part of the promotional campaign, we realized a series of short videos, each dedicated to a particular section of the villa.
+            <br>
+            <br>
+            Collaborators:<br>
+            Alessia Arosio, Camilla Baldi, Emanuele Coppo, Filippo Testa.<br>
+            <br>
+          </p>
+          <div>
+            <img src="images/villa-necchi/low-res/master.jpg">
+            <iframe src="https://www.instagram.com/p/BznwHEhIXai/embed" frameborder="0" class="ig"></iframe>
+            <iframe src="https://www.instagram.com/p/BznX8aaonET/embed" frameborder="0" class="ig"></iframe>
+            <br><br>
+            <video playsinline autoplay muted loop><source src="images/villa-necchi/sitoweb_final.mp4" type="video/mp4"></video>
+            <img src="images/villa-necchi/low-res/carta-intestata.jpg">
+            <img src="images/villa-necchi/low-res/brand-manuals.jpg">
+            <img src="images/villa-necchi/low-res/brandmanual-2.jpg">
+            <img src="images/villa-necchi/low-res/brandmanual-1.jpg">
+            <img src="images/villa-necchi/low-res/brandmanual-5.jpg">
+            <img src="images/villa-necchi/low-res/guida-0.jpg">
+            <img src="images/villa-necchi/low-res/guida-1.jpg">
+            <img src="images/villa-necchi/low-res/guida-3.jpg">
+            <img src="images/villa-necchi/low-res/timbro.jpg">
+            <img src="images/villa-necchi/poster strada_2.png">
+            <img src="images/villa-necchi/poster scorrevole.png">
+          </div>
+
+
+        </div>
+      <div class="content-dx" id="once-content">
+          <div class="header-dx">
+            <div class="dettagli">
+              <p>Video Essay</p>
+            </div>
+            <div class="dettagli" id="cliente">
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="dettagli" id="speciale">
+              <p>2019</p>
+            </div>
+          </div>
+          <p class="descrizione">
+            <i>Once Upon a Time in the Web</i> explores the evolution of freedom of expression on the internet. From the early days of the world wide web
+            a lot has changed in terms of content censorship, mainly because of economic reasons. The video illustrates, through a visual and
+            narrative metaphor (the end of the Old Wild West), the shift that is taking place. <br> I was responsible for the research, the writing,
+            the editing and the animations in the video.
+            <br>
+            <br>
+            Collaborators:<br>
+            Alessia Arosio, Camilla Baldi, Emanuele Coppo, Gianluca Locatelli, Pietro Martina, Filippo Testa, Chiara Ribolzi (narrator).<br>
+            <br>
+          </p>
+          <div class="vimeo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/339879264?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <br>
+        </div>
+      <div class="content-dx" id="airbnb-content">
+            <div class="header-dx">
+              <div class="dettagli">
+                <p>Commercial</p>
+              </div>
+              <div class="dettagli" id="cliente">
+                <p>Politecnico di Milano</p>
+              </div>
+              <div class="dettagli" id="speciale">
+                <p>2018</p>
+              </div>
+            </div>
+            <p class="descrizione">
+              <i>Airbnb Voice</i> is a fictional brand extension of Airbnb, that allows the host to provide useful information and
+              insight about the house to the guest, trough a Google Nest (ex Google Home).<br>After developing the user experience, realizing
+              the visual communication and a functional prototype, I wrote and directed this short commercial to advertise this new service in a funny way.
+              <br><br>
+              Collaborators:<br>
+              Alessia Arosio, Camilla Baldi, Emanuele Coppo, Filippo Testa, Melissa Di Cianni (actress), Fabio Ravasi (actor).<br>
+              <br>
+            </p>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe src="https://player.vimeo.com/video/311107520?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
+          </div>
+      <div class="content-dx" id="inner-content">
+          <div class="header-dx">
+            <div class="dettagli">
+              <p>Short Film</p>
+            </div>
+            <div class="dettagli" id="cliente">
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="dettagli" id="speciale">
+              <p>2018</p>
+            </div>
+          </div>
+          <p class="descrizione">
+            The brief for this university project was to choose a common theme in art and tell it through a specific filmic style.<br>
+            We chose to tell a story about beauty, through the eyes of Mario Bava, Dario Argento and Nicolas Winding Refn.
+            <br><br>
+            Collaborators:<br>
+            Alessia Arosio, Emanuele Coppo, Melissa Di Cianni (actress), Giulia Da Col Sortini (actress).<br>
+            <br>
+          </p>
+          <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/253871431?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+
+        </div>
+      <div class="content-dx" id="paul-content">
+          <div class="header-dx">
+            <div class="dettagli">
+              <p>Magazine + Video Essay</p>
+            </div>
+            <div class="dettagli" id="cliente">
+              <p>Politecnico di Milano</p>
+            </div>
+            <div class="dettagli" id="speciale">
+              <p>2018</p>
+            </div>
+          </div>
+          <p class="descrizione">
+            A monographic magazine issue about Paul Rand, world famous American graphic designer, one of the fathers of modernism. His vast work is analyzed
+            through four thematic chapters, each dedicated to a different area: editorial design, advertising, corporate identity and packaging design. <br>
+            In addition, I realized a short video essay, based on an interview we had with Steven Heller, New York Times journalist and graphic design critic.
+            <br>
+            <br>
+            Collaborators:<br>
+            Alessia Arosio, Emanuele Coppo, Filippo Testa.<br>
+            <br>
+          </p>
+          <div class="vimeo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/276952971?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <br>
+          <div class="vimeo" style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/277272588?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <br>
+          <img src="images/paul-rand/low-res/dettagli-92.jpg">
+          <img src="images/paul-rand/low-res/dettagli-66.jpg">
+          <img src="images/paul-rand/low-res/dettagli-81.jpg">
+          <img src="images/paul-rand/low-res/dettagli-84.jpg">
+          <img src="images/paul-rand/low-res/dettagli-40.jpg">
+          <img src="images/paul-rand/low-res/40.jpg">
+          <img src="images/paul-rand/low-res/42.jpg">
+          <img src="images/paul-rand/low-res/45.jpg">
+          <img src="images/paul-rand/low-res/46a5.jpg">
+          <img src="images/paul-rand/low-res/47.jpg">
+        </div>
+
+    </div>
+
+  </div>
+
+  <script src="jquery.js"></script>
+	<script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</body>
+</html>

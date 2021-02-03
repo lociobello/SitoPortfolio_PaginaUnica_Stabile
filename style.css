@@ -1,0 +1,446 @@
+@font-face{font-family: whyte-light; src: url('fonts/whyte/Whyte Light.otf');}
+@font-face{font-family: whyte-light; font-style: italic; src: url('fonts/whyte/Whyte Light Italic.otf');}
+
+@font-face{font-family: suisse_intl; font-weight: normal; src: url('fonts/suisse_intl/suisseintl-regular.otf');}
+@font-face{font-family: suisse_intl-light; font-weight: 200; src: url('fonts/suisse_intl/suisseintl-light.otf');}
+@font-face{font-family: sporting; font-weight: 200; src: url('fonts/sporting/SportingGrotesque-Regular.otf');}
+@font-face{font-family: garnett; font-weight: 200; src: url('fonts/garnett/Garnett Light.otf');}
+@font-face{font-family: bradford; font-weight: 200; src: url('fonts/bradford/Bradford-Regular.ttf');}
+@font-face{font-family: whyte-regular; src: url('fonts/whyte/Whyte Regular.otf');}
+@font-face{font-family: fabrique; src: url('fonts/la-fabrique/La Fabrique Regular.ttf');}
+@font-face{font-family: alpina; src: url('fonts/alpina/GTAlpina-Light.otf');}
+@font-face{font-family: surt-light; src: url('fonts/surt/AT Surt Light.otf');}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: whyte-light;
+  font-size: 20px;
+  line-height: 24px;
+  /* letter-spacing: 0.5px; */
+  cursor: crosshair;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+ul{
+  list-style-type: none;
+}
+img{
+  width: 100%;
+  padding-bottom: 6px;
+}
+video{
+  width: 100%;
+  padding-bottom: 6px;
+}
+a{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: black;
+  cursor: none;
+}
+button{
+  cursor: none;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+button:focus{
+  outline: 0;
+}
+button:target{
+  background-color: black;
+  color: white;
+}
+
+/*----------------CLASS ----------------------------*/
+
+.main-container{
+  display: flex;
+  height: 100%;
+  background-color: white;
+}
+.side-sx{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 40%;
+  height: 100%;
+}
+.side-dx{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: transparent;
+}
+.header-dx{
+  display: flex;
+  flex-direction: row;
+  margin: -10px;
+  position: fixed;
+  width: 60%;
+  margin-top: -48px;
+  z-index: 1;
+  mix-blend-mode: exclusion;
+}
+.content-sx{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.content-dx{
+  height: auto;
+  padding: 10px;
+  padding-top: 48px;
+}
+.content-wrapper{
+  display: flex;
+  flex: 1;
+  min-height: 0px;
+}
+.navbar{
+  /* border-bottom: 1px solid black; */
+  padding: 7px 10px 7px 10px;
+  margin-bottom: -1px;
+  text-align: center;
+  display: flex;
+}
+.dettagli{
+  border-right: 1px solid black;
+  border-bottom: 1px solid white;
+  flex-basis: 33.333333333%;
+  padding: 7px 10px 7px 10px;
+  background-color: white;
+  overflow-x: hidden;
+  white-space: nowrap;
+  flex-grow: 1;
+  font-weight: bolder;
+}
+.item{
+  flex-basis: 50%;
+  padding: 10px;
+  border-top: 1px solid black
+}
+.item-hide{
+  flex-basis: 50%;
+  padding: 10px;
+}
+.item-2{
+  flex-basis: 50%;
+  border-right: 1px solid black;
+}
+.gruppo-pulsanti{
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.footer{
+  position: absolute;
+  bottom: 6px;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  border-right: 1px solid black;
+  overflow-x: hidden;
+}
+.works{
+  /* display: flex; */
+  flex-direction: column;
+  flex-basis: 50%;
+  border-right: 1px solid black;
+  overflow: scroll;
+}
+.works::-webkit-scrollbar {
+  display: none;
+}
+#inizio::-webkit-scrollbar {
+  display: none;
+}
+.ig{
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: -16px;
+  width: 49.5%;
+  height: 760px;
+}
+.vimeo{
+  margin-bottom: -14px;
+}
+.yt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.filterDiv{
+  background-color: inherit;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 8px 0px 8px 10px;
+  /* cursor: url(images/tondo.png), auto; */
+  width: 100%;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+.btn{
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 2px 12px 2px 12px;
+  margin: 6px 0px 6px 0px;
+  background-color: inherit;
+  text-decoration: none;
+}
+.filterDiv{
+  display: none;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.active{
+  color: white;
+  background-color: black;
+}
+.pallino{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -50%;
+  left: -50%;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  background-color: white;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease-out;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  pointer-events: none;
+}
+.attivo{
+  background-color: black;
+  color: white;
+}
+::selection {
+  color: white;
+  background: black;
+}
+
+#inizio{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#inizio::-webkit-scrollbar {
+  display: none;
+}
+#VideoHome{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 0px;
+}
+#speciale{
+  border-right: none;
+}
+#primo-btn{
+  margin-left: 8px;
+}
+#ultimo-btn{
+  margin-right: 8px;
+}
+#gruppo-filtri{
+  /* display: flex; */
+  /* display: inline; */
+  overflow: auto;
+  width: 384px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  white-space: nowrap;
+}
+#gruppo-filtri::-webkit-scrollbar {
+  display: none;
+}
+#home-mobile{
+  display: none;
+}
+#works-mobile{
+  display: none;
+}
+#back{
+  display: none;
+}
+
+
+/*----- MEDIA QUERIES ---------------------------------------- */
+
+@media (max-width: 1024px) {
+  .side-sx{
+    flex-direction: column;
+    flex-basis: 20%;
+  }
+  .side-dx{
+    flex-basis: 80%;
+  }
+  .header-dx{
+    width: 80%;
+  }
+  .works{
+    /* border-top: 1px solid black; */
+  }
+  .footer{
+    display: none;
+  }
+  .ig{
+    width: 100%;
+    height: 750px;
+    margin-bottom: 6px;
+  }
+  .pallino{
+    background-color: black;
+  }
+  #navbar-2{
+    border-top: 1px solid black;
+  }
+}
+
+
+@media (max-width: 768px) {
+  html{
+    height: auto;
+  }
+  video{
+    margin-top: -20px;
+  }
+  .main-container{
+    flex-direction: column;
+  }
+  .about{
+    border-right: none;
+    border-bottom: none;
+  }
+  .works{
+    border-right: none;
+    overflow: scroll;
+  }
+  .dettagli{
+    display: flex;
+  }
+  .ig{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 6px;
+  }
+  .item-hide{
+    display: none;
+  }
+  .gruppo-pulsanti{
+    border-bottom: 1px solid white;
+  }
+  .navbar{
+    padding: 0px 0px 0px 0px;
+  }
+  .footer{
+    display: block;
+  }
+  .side-sx{
+    height: 100%;
+    flex-basis: 100%;
+  }
+  #VideoHome{
+    display: none;
+  }
+  #cliente{
+    display: none;
+  }
+  #attivo{
+    border-bottom: 1px solid white;
+  }
+  #gruppo-filtri{
+    width: 100%;
+  }
+  #home{
+    display: none;
+  }
+  #navbar-1{
+    display: flex;
+    width: 100%;
+    height: 40px;
+  }
+  #navbar-2{
+    display: none;
+  }
+  #home-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    padding: 7px 10px 7px 10px;
+    justify-content: center;
+  }
+  #works-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    border-left: 1px solid black;
+    padding: 7px 10px 7px 10px;
+    justify-content: center;
+  }
+  #back{
+    display: block;
+    color: white;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .content-dx{
+    padding: 0px;
+  }
+  .descrizione{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 16px;
+  }
+  .vimeo{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  img{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  iframe{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header-dx{
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    position: inherit;
+  }
+}
